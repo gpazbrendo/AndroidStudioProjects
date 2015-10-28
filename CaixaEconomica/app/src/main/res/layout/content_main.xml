@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:background="#000080">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acesso sua Conta"
+        android:drawableTop="@drawable/acessesuaconta"
+        android:id="@+id/textAcesConta"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/imageViewCaixa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loterias CAIXA"
+        android:drawableTop="@drawable/loteriacaixa"
+        android:id="@+id/textLtaCaixa"
+        android:layout_alignTop="@+id/textAcesConta"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simulador\nde Habitação"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/simuladordehabitacao"
+        android:id="@+id/textSldHabitacao"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textTelCaixa"
+        android:layout_alignStart="@+id/textTelCaixa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rede de\nAtendimento"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/rededeatendimento"
+        android:id="@+id/textRdAtendimento"
+        android:layout_alignTop="@+id/textSldHabitacao"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/textLtaCaixa"
+        android:layout_alignStart="@+id/textLtaCaixa"
+        android:layout_above="@+id/textCalSocial" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefones CAIXA"
+        android:drawableTop="@drawable/telefonescaixa"
+        android:id="@+id/textTelCaixa"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textAcesConta"
+        android:layout_alignEnd="@+id/textAcesConta"
+        android:layout_marginBottom="98dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendario\nSocial"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/calendariosocial"
+        android:id="@+id/textCalSocial"
+        android:layout_alignTop="@+id/textTelCaixa"
+        android:layout_alignRight="@+id/textRdAtendimento"
+        android:layout_alignEnd="@+id/textRdAtendimento"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/textRdAtendimento"
+        android:layout_alignStart="@+id/textRdAtendimento" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCaixa"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/caixa"/>
+
+</RelativeLayout>
